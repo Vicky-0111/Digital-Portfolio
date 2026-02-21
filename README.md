@@ -36,7 +36,7 @@
 
 🚀 How to Run the Project
 
-🔹 Method 1: Access Live Website (Recommended)
+Access Live Website 
 
    1. Click the Live Demo link above.
       
