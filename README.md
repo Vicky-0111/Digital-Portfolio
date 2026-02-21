@@ -2,15 +2,18 @@
 
 ✨ A fully responsive digital portfolio website developed using **HTML, CSS, Bootstrap, and JavaScript.  
 
-This project showcases my skills, projects, and contact information in a structured and professional manner.
+   This project showcases my skills, projects, and contact information in a structured and professional manner.
 
 ---
 
 🛠️ Technologies Used
 
-- 🧱 HTML5  
-- 🎨 CSS3  
-- 📐 Bootstrap 5  
+- 🧱 HTML5
+  
+- 🎨 CSS3
+  
+- 📐 Bootstrap 5
+  
 - ⚡ JavaScript  
 
 ---
@@ -67,6 +70,11 @@ To further improve the project, the following upgrades can be implemented:
 
 ---
 
+👨‍💻 Author 
+
+Vicky Kumar 
+
+GitHub: https://github.com/Vicky-0111
 
 <img width="1914" height="868" alt="digiport1" src="https://github.com/user-attachments/assets/689298b0-9693-4934-85d7-97b484a48707" />
 
