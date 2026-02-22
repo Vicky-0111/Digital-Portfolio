@@ -38,7 +38,9 @@
 
    Access Live Website 
 
-   1. Click the Live Demo link above.
+   1. Click the Live Demo link below.
+      
+      https://vicky-0111.github.io/Digital-Portfolio/
       
    2. The website will open directly in your browser.
 
