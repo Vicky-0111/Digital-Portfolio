@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- IMPORTANT FOR MOBILE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Digital Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="Portfolio.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Responsive Section Box */
+    .section {
+      display: none;
+      padding: 20px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 10px;
+      border: 2px solid black;
+      background-color: #f8f9fa;
+    }
+
+    /* Responsive Profile Image */
+    .profile-circle {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .profile-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Responsive font adjustments */
+    @media (max-width: 768px) {
+      .header {
+        font-size: 1.3rem;
+      }
+      
+      .thankyou-box{
+        font-size: 1.3rem;
+      }
+      
+      .name {
+        font-size: 1.2rem;
+      }
+
+      .profile-circle {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    /* Desktop Layout */
+.handle {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Button smooth animation */
+.responsive-btn {
+  transition: all 0.3s ease;
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .responsive-btn {
+    width: 45%;
+    text-align: center;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 576px) {
+  .responsive-btn {
+    width: 100%;
+  }
+}
+
+    
+  </style>
+</head>
+
+<body>
+
+  
+<div class="header">
+  Dive Into My World of Digital Creativity and Development
+</div>
+
+<div class="handle">
+  <a href="https://github.com/Vicky-0111" target="_blank" class="btn purple-btn btn-lg rounded-pill shadow-sm responsive-btn">
+  <i class="bi bi-github"></i> GitHub
+</a>
+
+<a href="https://leetcode.com/vicky_055" target="_blank" class="btn purple-btn btn-lg rounded-pill shadow-sm responsive-btn">
+  <i class="bi bi-github"></i> Leetcode
+</a>
+
+
+<a href="https://www.hackerrank.com/profile/vickyk34297/" target="_blank" class="btn purple-btn btn-lg rounded-pill shadow-sm responsive-btn">
+  <i class="bi bi-github"></i> HackerRank
+</a>
+
+
+<a href="https://tryhackme.com/p/Vicky055/" target="_blank" class="btn purple-btn btn-lg rounded-pill shadow-sm responsive-btn">
+  <i class="bi bi-github"></i> TryHackMe
+</a>
+
+
+<a href="https://www.linkedin.com/in/vickyvics/" target="_blank" class="btn purple-btn btn-lg rounded-pill shadow-sm responsive-btn">
+  <i class="bi bi-github"></i> LinkedIn
+</a>
+
+</div>
+
+
+<div class="profile-circle text-center">
+  <img src="Assets/Profile1.jpeg" alt="profile-image" class="img-fluid">
+</div>
+
+<div class="name text-center fw-bold mb-4">
+  Vicky Kumar
+</div>
+
+<div class="container my-4">
+  <div class="row g-4 justify-content-center">
+
+    <!-- Updated Responsive Columns -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm" onclick="showInfo()">
+        <img src="Assets/about.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center card-body text-center fw-bold fs-4">ABOUT ME</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm" onclick="showInfo1()">
+        <img src="Assets/skill.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center card-body text-center fw-bold fs-4 ">SKILLS</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm" onclick="showInfo2()">
+        <img src="Assets/project.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center  card-body text-center fw-bold fs-4">PROJECTS</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm" onclick="showInfo3()">
+        <img src="Assets/certification.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center  card-body text-center fw-bold fs-4">CERTIFICATION</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm" onclick="showInfo4()">
+        <img src="Assets/award.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center  card-body text-center fw-bold fs-4">TOOLS & PLATFORMS</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm" onclick="showInfo5()">
+        <img src="Assets/hobbies.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center  card-body text-center fw-bold fs-4">ACHIVEMENTS</div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100 shadow-sm" onclick="showInfo6()">
+        <img src="Assets/contact.jpg" class="card-img-top img-fluid">
+        <div class="card-body text-center  card-body text-center fw-bold fs-4">CONTACT</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONTENT SECTIONS -->
+
+<div id="info-box" class="section">
+  <h2>ABOUT ME</h2>
+  <p>I am a Computer Science and Engineering student specializing in Cyber Security, with a strong interest in 
+    building secure and scalable applications. Alongside my academic focus, I actively work with the MERN stack to 
+    develop modern, full-stack web solutions. I am deeply committed to strengthening my problem-solving abilities 
+    through consistent practice on platforms like LeetCode. My goal is to combine development expertise with cybersecurity
+     principles to create robust, efficient, and secure digital systems.</p>
+</div>
+
+<div id="info-box-skill" class="section">
+  <h2>SKILLS</h2>
+  <ul>
+    <li>Full-Stack Development (MERN Stack)</li>
+
+    <li>MongoDB (Database Design & CRUD Operations)</li>
+
+    <li>Express.js (Backend Development & REST APIs)</li>
+
+    <li>React.js (Component-Based UI Development)</li>
+
+    <li>Node.js (Server-Side Development)</li>
+
+    <li>Authentication & Authorization (JWT, Session Handling)</li>
+
+    <li>RESTful API Development</li>
+
+    <li>Data Structures & Competitive Programming</li>
+
+    <li>Data Structures (Arrays, Linked List, Stack, Queue, Trees, Graphs)</li>
+
+    <li>Algorithms (Sorting, Searching, Recursion, Backtracking)</li>
+
+    <li>Problem Solving on LeetCode & Similar Platforms</li>
+
+    <li>Competitive Programming in Java</li>
+
+    <li>Programming Languages</li>
+
+    <li>Java (Primary for DSA & Competitive Programming)</li>
+
+    <li>JavaScript</li>
+
+    <li>Python (Basic/Intermediate)</li>
+
+    <li>C (Fundamentals)</li>
+    
+    <li>Cyber Security</li>
+
+    <li>Network Security Fundamentals</li>
+
+    <li>Vulnerability Assessment & Basic Penetration Testing</li>
+
+    <li>Web Application Security Concepts (OWASP Basics)</li>
+
+    <li>Hands-on Labs & Practical Training (TryHackMe)</li>
+
+    <li>Linux Fundamentals for Security</li>
+
+    <li>Basic Cryptography & Security Principles</li>
+  </ul>
+</div>
+
+<div id="info-box-project" class="section">
+  <h2>PROJECTS</h2>
+
+  <ul>
+    <li>WanderLust - Full Stack Vacation Rental Platform (MERN)</li>
+
+    <li>URL Shortner (Java Project)</li>
+
+  <li>Dashboard/ Analytics Application (Frontend Project)</li>
+
+  </ul>
+</div>
+
+<div id="info-box-certification" class="section">
+  <h2>CERTIFICATIONS</h2>
+  <ul>
+    <li>AI Agent Intensive Course : Certificate by Kaggle & Google</li>
+
+    <li>Oracle Fusion AI Agent Studio : Certificate by Oracle</li>
+
+    <li>IBM SkillsBuild - Front End Web Development </li>
+
+    <li>Innovative Project Using Raspberry Pi: Presidency University</li>
+
+    <li>Hackathon: DecodeX (IEEE SPS BMSIT&M) : Certificate by BMSIT&M</li>
+  </ul>
+</div>
+
+<div id="info-box-award" class="section">
+  <h2>Tools & Platforms</h2>
+
+  <ul>
+  <li>Docker(Containerization Basics)</li>
+
+  <li>Linux</li>
+  
+  <li>Git & GitHub</li>
+
+  <li>Kubernetes (basic level)</li>
+
+  <li>VS Code</li>
+
+  <li>Eclipse (Java Development)</li>
+  </ul>
+</div>
+
+<div id="info-box-hobby" class="section">
+  <h2>Achievements</h2>
+
+  <ul>
+    <li>Solved 300+ DSA problems</li>
+
+    <li>LeetCode rating</li>
+
+    <li>TryHackMe badges</li>
+  </ul>
+</div>
+
+<div id="info-box-contact" class="section">
+  <h2>CONTACT</h2>
+
+  <ul>
+    <li>Email id: vickyk34297@gmail.com</li>
+    <li>Phone no: 9102224720</li>
+    <li>Whatsapp: 9102224720</li>
+  </ul>
+</div>
+
+<footer>
+    
+<div class="thankyou-box">
+    Thank you for visiting my Portfolio
+  </div>
+  </footer>
+
+<script src="Portfolio.js"></script>
+
+</body>
+</html>
